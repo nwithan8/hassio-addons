@@ -1,0 +1,23 @@
+name: Pixlet
+version: 0.28.0
+slug: pixlet
+description: Build apps for pixel-based displays, such as Tidbyt
+url: https://github.com/nwithan8/addon-willow-application-server/tree/master/pixel-webapp
+codenotary: nwithan8@users.noreply.github.com
+webui: http://[HOST]:[PORT:8080]
+startup: services
+init: false
+arch:
+  - amd64
+  - aarch64
+map:
+  - config:rw
+ports:
+  8080/tcp: 9142
+ports_description:
+  8080/tcp: Web UI
+hassio_api: false
+backup_exclude: []
+options: {}
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
