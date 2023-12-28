@@ -1,3 +1,4 @@
-name: willow-application-server
-url: https://github.com/nwithan8/addon-willow-application-server
+name: HA Add-ons by nwithan8
+udev: true
+url: https://github.com/nwithan8/hassio-addons
 maintainer: nwithan8

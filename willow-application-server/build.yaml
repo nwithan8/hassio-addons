@@ -1,0 +1,7 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  aarch64: "python:3.12.0-slim-bookworm"
+  amd64: "python:3.12.0-slim-bookworm"
+  armhf: "python:3.12.0-slim-bookworm"
+  armv7: "python:3.12.0-slim-bookworm"
+  i386: "python:3.12.0-slim-bookworm"
