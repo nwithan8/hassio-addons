@@ -1,0 +1,19 @@
+
+name: Willow Application Server
+version: 0.2.0-rc2
+slug: willow_application_server
+description: A Willow Application Server instance running in Home Assistant.
+url: https://github.com/nwithan8/addon-willow-application-server
+init: false
+arch:
+  - aarch64
+  - amd64
+apparmor: true
+ingress: true
+ingress_port: 8502
+ingress_stream: true
+panel_icon: mdi:atom
+image: ghcr.io/toverainc/willow-application-server
+ports:
+  8501/tcp: 8501
+  8502/tcp: 8502
