@@ -1,0 +1,23 @@
+name: Pixlet Push
+version: 0.28.0
+slug: pixlet_push
+description: Send Pixlet images to a Tidbyt device
+url: https://github.com/nwithan8/addon-willow-application-server/tree/master/pixel-push
+codenotary: nwithan8@users.noreply.github.com
+webui: http://[HOST]:[PORT:5000]
+startup: services
+init: false
+arch:
+  - amd64
+  - aarch64
+map:
+  - addon_config:rw
+ports:
+  5000/tcp: 5300
+ports_description:
+  5000/tcp: Web Server
+hassio_api: false
+backup_exclude: []
+options: {}
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
