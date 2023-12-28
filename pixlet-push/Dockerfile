@@ -1,30 +1,13 @@
-# Comes via Home Assistant Add-On install process inherently
-ARG BUILD_FROM
-
-# Use $BUILD_FROM as base image
-FROM $BUILD_FROM
-
-# Must define args after FROM:
-# https://stackoverflow.com/a/56748289/13343799
-# https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
+FROM python:3.12.0-slim-bookworm
 
 # Comes from Home Assistant Add-On config.json
-ARG BUILD_VERSION
+ARG BUILD_VERSION=0.28.0
 
 # Comes from Home Assistant Add-On install process inherently
-ARG BUILD_ARCH
+ARG BUILD_ARCH=amd64
 
-# Install depenendencies
-# curl and tar pre-installed in base image
-RUN \
-  apk add --no-cache \
-    python3 py3-pip
-
-# Add shortcuts to .bashrc so if/when user enters container, they're loaded
-RUN echo "#!/usr/bin/with-contenv bashio" >> /root/.bashrc
-RUN echo "" >> /root/.bashrc
-RUN echo "export PATH=$PATH:/pixlet" >> /root/.bashrc
-RUN echo "export PIXLET_FILES_DIR=/config/files" >> /root/.bashrc
+# Install dependencies for container
+RUN apt-get update && apt-get install --no-install-recommends -y curl tar && rm -rf /var/lib/apt/lists/*
 
 # Copy Python server files into container
 COPY /server.py /server/
