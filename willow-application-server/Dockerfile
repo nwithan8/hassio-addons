@@ -5,14 +5,17 @@ WORKDIR /app
 # Install dependencies for container
 RUN apt-get update && apt-get install --no-install-recommends -y wget git gcc libc6-dev libmagic1 && rm -rf /var/lib/apt/lists/*
 
+# Define versions
+ARG BACKEND_VERSION=0.2.0-rc.2
+ARG FRONTEND_VERSION=0.2.0-rc.2
+
 # Download WAS source code (checkout specified tag)
-ARG BUILD_VERSION
 RUN git clone https://github.com/toverainc/willow-application-server /app
 RUN git fetch --all --tags
-RUN git checkout tags/$BUILD_VERSION -b $BUILD_VERSION
+RUN git checkout tags/$BACKEND_VERSION -b $BACKEND_VERSION
 
 # Download WAS admin panel UI (at specified tag)
-RUN wget https://github.com/toverainc/willow-application-server-ui/releases/download/$BUILD_VERSION/willow-application-server-ui.tar.gz
+RUN wget https://github.com/toverainc/willow-application-server-ui/releases/download/$FRONTEND_VERSION/willow-application-server-ui.tar.gz
 RUN mkdir -p /app/static/admin
 RUN tar --directory=/app/static/admin/ --strip-components=1 -xzf willow-application-server-ui.tar.gz
 RUN rm willow-application-server-ui.tar.gz

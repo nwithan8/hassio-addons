@@ -1,6 +1,6 @@
 #include <tunables/global>
 
-profile fusion flags=(attach_disconnected,mediate_deleted) {
+profile willow_application_server flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
 
   # Capabilities
