@@ -11,7 +11,7 @@ arch:
   - amd64
   - aarch64
 map:
-  - config:rw
+  - addon_config:rw
 ports:
   8080/tcp: 9142
 ports_description:
