@@ -31,4 +31,4 @@ Navigate to the add-on's webapp by clicking the "Open Web UI" button in the add-
 
 [support-shield]: https://img.shields.io/badge/Support_Me-Buy_Me_A_Coffee?style=for-the-badge&logo=buymeacoffee&color=blue&link=https%3A%2F%2Fwww.buymeacoffee.com%2Fnwithan8
 [sponsor-shield]: https://img.shields.io/badge/Sponsor_Me-GitHub_Sponsors?style=for-the-badge&logo=githubsponsors&color=green&link=https%3A%2F%2Fgithub.com%2Fnwithan8%2F
-[screenshot]: https://raw.githubusercontent.com/nwithan8/hassio-addons/main/images/pixlet-webapp/webapp.png
+[screenshot]: https://raw.githubusercontent.com/nwithan8/hassio-addons/master/images/pixlet-webapp/webapp.png
