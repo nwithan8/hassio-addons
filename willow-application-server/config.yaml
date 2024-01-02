@@ -4,6 +4,7 @@ version: 0.2.0-rc.2-1
 slug: willow_application_server
 description: A Willow Application Server instance running in Home Assistant
 url: https://github.com/nwithan8/addon-willow-application-server/tree/master/willow-application-server
+codenotary: nwithan8@users.noreply.github.com
 init: false
 arch:
   - aarch64

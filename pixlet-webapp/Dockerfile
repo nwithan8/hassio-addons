@@ -1,10 +1,9 @@
 FROM python:3.12.0-slim-bookworm
 
-# Comes from Home Assistant Add-On config.json
-ARG PIXLET_VERSION=0.28.0
+ARG PIXLET_VERSION=0.29.1
 
 # Comes from Home Assistant Add-On install process inherently
-ARG BUILD_ARCH=amd64
+ARG BUILD_ARCH
 
 # Install dependencies for container
 RUN apt-get update && apt-get install --no-install-recommends -y curl tar && rm -rf /var/lib/apt/lists/*
