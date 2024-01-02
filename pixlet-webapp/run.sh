@@ -5,6 +5,7 @@ echo "Starting Pixlet Push..."
 # Prepare file system
 echo "Preparing file system..."
 mkdir -p /config/files || true
+cp -r /tmp/*.star /config/files || true
 
 # Add shortcuts to .bashrc so if/when user enters container, they're loaded
 echo "#!/bin/bash" >> /root/.bashrc
