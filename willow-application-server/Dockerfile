@@ -6,8 +6,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install --no-install-recommends -y wget git gcc libc6-dev libmagic1 && rm -rf /var/lib/apt/lists/*
 
 # Define versions
-ARG BACKEND_VERSION=0.2.0-rc.2
-ARG FRONTEND_VERSION=0.2.0-rc.2
+ARG BACKEND_VERSION=0.2.0
+ARG FRONTEND_VERSION=0.2.0
 
 # Download WAS source code (checkout specified tag)
 RUN git clone https://github.com/toverainc/willow-application-server /app
