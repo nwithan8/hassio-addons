@@ -1,0 +1,23 @@
+name: Willow Autocorrect
+version: 0.1.0
+slug: willow_autocorrect
+description: A Willow Autocorrect instance running in Home Assistant
+url: https://github.com/nwithan8/hassio-addons/tree/master/willow-autocorrect
+codenotary: nwithan8@users.noreply.github.com
+init: false
+arch:
+  - aarch64
+  - amd64
+apparmor: true
+panel_icon: mdi:text-box-check-outline
+host_network: true
+webui: http://[HOST]:[PORT:9241]
+hassio_api: false
+startup: services
+backup_exclude: []
+options:
+  ha_token: null
+schema:
+  ha_token: str
+map:
+ - addon_config:rw
