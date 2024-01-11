@@ -1,3 +1,9 @@
+## 0.1.1 (2024-01-11)
+
+#### Willow Autocorrect: [main](https://github.com/toverainc/willow-autocorrect/commits/main/)
+
+- Fix architecture detection issue preventing installation on arm64 devices
+
 ## 0.1.0 (2024-01-11)
 
 #### Willow Autocorrect: [main](https://github.com/toverainc/willow-autocorrect/commits/main/)

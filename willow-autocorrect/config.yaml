@@ -1,5 +1,5 @@
 name: Willow Autocorrect
-version: 0.1.0
+version: 0.1.1
 slug: willow_autocorrect
 description: A Willow Autocorrect instance running in Home Assistant
 url: https://github.com/nwithan8/hassio-addons/tree/master/willow-autocorrect
