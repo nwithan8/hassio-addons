@@ -1,3 +1,11 @@
+## 0.2.0.2 (2024-02-01)
+
+#### Willow Application Server (Backend): [0.2.0](https://github.com/toverainc/willow-application-server/tree/0.2.0)
+
+#### Willow Application Server UI (Frontend): [0.2.0](https://github.com/toverainc/willow-application-server-ui/tree/0.2.0)
+
+- Fix applying configuration options
+
 ## 0.2.0.1 (2024-02-01)
 
 #### Willow Application Server (Backend): [0.2.0](https://github.com/toverainc/willow-application-server/tree/0.2.0)
