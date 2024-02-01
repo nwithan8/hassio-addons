@@ -1,6 +1,6 @@
 
 name: Willow Application Server
-version: 0.2.0.2
+version: 0.2.0.3
 slug: willow_application_server
 description: A Willow Application Server instance running in Home Assistant
 url: https://github.com/nwithan8/hassio-addons/tree/master/willow-application-server
