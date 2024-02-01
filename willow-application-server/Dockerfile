@@ -3,7 +3,7 @@ FROM python:3.12.0-slim-bookworm
 WORKDIR /app
 
 # Install dependencies for container
-RUN apt-get update && apt-get install --no-install-recommends -y wget git gcc libc6-dev libmagic1 && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install --no-install-recommends -y wget jq git gcc libc6-dev libmagic1 && rm -rf /var/lib/apt/lists/*
 
 # Define versions
 ARG BACKEND_VERSION=0.2.0
