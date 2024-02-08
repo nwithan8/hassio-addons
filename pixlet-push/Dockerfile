@@ -6,7 +6,7 @@ ARG PIXLET_VERSION=0.29.1
 ARG BUILD_ARCH
 
 # Install dependencies for container
-RUN apt-get update && apt-get install --no-install-recommends -y curl tar && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y && apt-get install --no-install-recommends -y curl tar && rm -rf /var/lib/apt/lists/*
 
 # Copy Python server files into container
 COPY /server.py /server/

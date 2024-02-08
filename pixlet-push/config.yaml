@@ -1,5 +1,5 @@
 name: Pixlet Push
-version: 0.29.1
+version: 0.29.1.1
 slug: pixlet_push
 description: Send Pixlet images to a Tidbyt device
 url: https://github.com/nwithan8/hassio-addons/tree/master/pixel-push
@@ -7,6 +7,7 @@ codenotary: nwithan8@users.noreply.github.com
 webui: http://[HOST]:[PORT:5000]
 startup: services
 init: false
+apparmor: true
 arch:
   - amd64
   - aarch64

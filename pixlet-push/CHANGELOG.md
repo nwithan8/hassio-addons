@@ -1,3 +1,9 @@
+## 0.29.1.1 (2024-02-07)
+
+#### Pixlet: [0.29.1](https://github.com/tidbyt/pixlet/releases/tag/v0.29.1)
+
+- Fix stalling Docker build due to interactive apt-get prompt
+
 ## 0.29.1 (2024-01-02)
 
 #### Pixlet: [0.29.1](https://github.com/tidbyt/pixlet/releases/tag/v0.29.1)

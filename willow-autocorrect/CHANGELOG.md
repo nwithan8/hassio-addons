@@ -1,3 +1,9 @@
+## 0.1.1.1 (2024-02-07)
+
+#### Willow Autocorrect: [main](https://github.com/toverainc/willow-autocorrect/commits/main/)
+
+- Fix stalling Docker build due to interactive apt-get prompt
+
 ## 0.1.1 (2024-01-11)
 
 #### Willow Autocorrect: [main](https://github.com/toverainc/willow-autocorrect/commits/main/)

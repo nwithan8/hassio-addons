@@ -6,7 +6,7 @@ ARG BUILD_ARCH="aarch64"
 # Install typesense-server with md5sum workaround
 
 # Install dependencies for container
-RUN apt-get update && apt-get install --no-install-recommends -y wget jq git coreutils curl && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y && apt-get install --no-install-recommends -y wget jq git coreutils curl && rm -rf /var/lib/apt/lists/*
 
 # Download typesense-server
 WORKDIR /usr/local/sbin

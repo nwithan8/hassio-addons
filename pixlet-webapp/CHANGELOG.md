@@ -2,6 +2,10 @@
 
 #### Pixlet: [0.29.1](https://github.com/tidbyt/pixlet/releases/tag/v0.29.1)
 
+- Fix stalling Docker build due to interactive apt-get prompt
+
+#### Pixlet: [0.29.1](https://github.com/tidbyt/pixlet/releases/tag/v0.29.1)
+
 - Fix AppArmor configuration
 - Fix `hello_world` example
 - Fix file paths
